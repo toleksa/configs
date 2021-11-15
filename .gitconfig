@@ -1,0 +1,10 @@
+[user]
+        email = toleksa@gmail.com
+        name = toleksa
+        signingkey = 1FD5679F4A6030AF
+
+[alias]
+    gl = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %G? %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+
+[core]
+        editor = vim
