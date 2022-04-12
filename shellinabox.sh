@@ -1,13 +1,10 @@
 #!/bin/bash
 
-#mkdir /home/guest/bin
-#chmod 755 /home/guest/bin
-ln -s /usr/bin/ssh /.home/guest/ssh
-
+rm -rf /home/guest/*
 echo "export HISTFILE=/dev/null" > /home/guest/.bash_profile
 echo "export PATH=/home/guest" >> /home/guest/.bash_profile
-echo "" > /home/guest/.bashrc
-chmod 444 /home/guest/.bash_profile /home/guest/.bashrc
-chattr +i /home/guest/.bashrc /home/guest/.bash_profile
+chmod 444 /home/guest/.*
+chattr +i /home/guest/.*
 chmod 500 /home/guest
+ln -s /usr/bin/ssh /home/guest/ssh
 
