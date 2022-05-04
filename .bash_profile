@@ -2,6 +2,9 @@
 # ~/.bash_profile
 #
 
+[ ! -z "$BASH_PROFILE_SET" ] && return
+export BASH_PROFILE_SET=1
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 if [[ ${EUID} == 0 ]] ; then
