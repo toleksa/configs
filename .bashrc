@@ -38,6 +38,10 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
+if [ -f ~/.bash_kube ]; then
+    . ~/.bash_kube
+fi
+
 if [[ ${EUID} == 0 ]] ; then
   PS1='\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w#\[\033[00m\] '
 else
