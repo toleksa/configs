@@ -9,3 +9,5 @@ chmod 500 /home/guest
 chmod 555 /home
 ln -s /usr/bin/ssh /home/guest/ssh
 
+chmod -x /etc/update-motd.d/*
+
