@@ -10,4 +10,4 @@ chmod 555 /home
 ln -s /usr/bin/ssh /home/guest/ssh
 
 chmod -x /etc/update-motd.d/*
-
+echo "" > /etc/legal
