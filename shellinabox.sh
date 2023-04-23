@@ -1,6 +1,8 @@
 #!/bin/bash
 
 rm -rf /home/guest/* /home/guest/.*
+touch /home/guest/.hushlogin
+chmod 444 /home/guest/.hushlogin
 echo "export HISTFILE=/dev/null" > /home/guest/.bash_profile
 echo "export PATH=/home/guest" >> /home/guest/.bash_profile
 chmod 555 /home/guest/.bash_profile
