@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "shell hard nproc 50" >> /etc/security/limits.conf
+echo "shell soft nproc 50" >> /etc/security/limits.conf
+echo "shell hard nofile 50" >> /etc/security/limits.conf
+echo "shell soft nofile 50" >> /etc/security/limits.conf
+
 rm -rf /home/guest/* /home/guest/.*
 touch /home/guest/.hushlogin
 chmod 444 /home/guest/.hushlogin
