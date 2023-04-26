@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "shell hard nproc 100" >> /etc/security/limits.conf
-echo "shell soft nproc 100" >> /etc/security/limits.conf
+echo "shell hard nproc 1000" >> /etc/security/limits.conf
+echo "shell soft nproc 1000" >> /etc/security/limits.conf
 echo "shell hard nofile 100" >> /etc/security/limits.conf
 echo "shell soft nofile 100" >> /etc/security/limits.conf
 
