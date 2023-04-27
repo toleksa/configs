@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "shell hard nproc 1000" >> /etc/security/limits.conf
-echo "shell soft nproc 1000" >> /etc/security/limits.conf
-echo "shell hard nofile 100" >> /etc/security/limits.conf
-echo "shell soft nofile 100" >> /etc/security/limits.conf
+echo "shell hard nproc 4096" >> /etc/security/limits.conf
+echo "shell soft nproc 4096" >> /etc/security/limits.conf
+echo "shell hard nofile 512" >> /etc/security/limits.conf
+echo "shell soft nofile 512" >> /etc/security/limits.conf
 
 rm -rf /home/guest/* /home/guest/.*
 touch /home/guest/.hushlogin
