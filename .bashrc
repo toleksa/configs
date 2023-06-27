@@ -33,6 +33,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias df='df -x tmpfs'
 
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
