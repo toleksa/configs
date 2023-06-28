@@ -6,7 +6,7 @@ set mouse-=a
 set hlsearch
 
 highlight ColorColumn ctermbg=18
-:noremap <F2> :call ShowColumn()<cr>
+:noremap <c-l> :call ShowColumn()<cr>
 function! ShowColumn()
     let curcolumn = col(".")
     if &colorcolumn == l:curcolumn
