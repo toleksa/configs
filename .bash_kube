@@ -1,5 +1,7 @@
-prompt(){ PS1='\[\033[01;31m\]\u@\h\[\033[00m\]($(kubectl config view --minify | grep namespace | cut -d" " -f6)):\[\033[01;34m\]\w\[\033[00m\]\$ ' ; }
-PROMPT_COMMAND=prompt
+if [ -v KUBECONFIG ] && [ -f "$KUBECONFIG" ]; then
+    prompt(){ PS1='\[\033[01;31m\]\u@\h\[\033[00m\]($(kubectl config view --minify | grep namespace | cut -d" " -f6)):\[\033[01;34m\]\w\[\033[00m\]\$ ' ; }
+    PROMPT_COMMAND=prompt
+fi
 alias k='kubectl'
 alias king='kubectl get ingress -A'
 alias kapp='kubectl get applications.argoproj.io -A'
