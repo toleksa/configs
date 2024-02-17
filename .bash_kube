@@ -6,6 +6,7 @@ alias k='kubectl'
 alias king='kubectl get ingress -A'
 alias kapp='kubectl get applications.argoproj.io -A'
 alias kall='kubectl get all -A'
+source /etc/bash_completion
 source <(kubectl completion bash)
 complete -F __start_kubectl k
 
